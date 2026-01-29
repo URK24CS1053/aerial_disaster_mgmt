@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAR System Dashboard</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .chart { display: flex; justify-content: center; margin: 20px; }
+    </style>
+</head>
+<body>
+    <h1>SAR System Interactive Dashboard</h1>
+    <div class="chart" id="chart"></div>
+    <script>
+        // Sample data for SAR visualization
+        const data = [{date: '2026-01-01', tasks: 10}, {date: '2026-01-02', tasks: 15}, {date: '2026-01-03', tasks: 12}, {date: '2026-01-04', tasks: 8}];
+
+        const svg = d3.select("#chart").append("svg").attr("width", 500).attr("height", 300);
+
+        const x = d3.scaleBand().domain(data.map(d => d.date)).range([0, 500]).padding(0.1);
+        const y = d3.scaleLinear().domain([0, d3.max(data, d => d.tasks)]).range([300, 0]);
+
+        svg.selectAll("rect")
+            .data(data)
+            .enter().append("rect")
+            .attr("x", d => x(d.date))
+            .attr("y", d => y(d.tasks))
+            .attr("width", x.bandwidth())
+            .attr("height", d => 300 - y(d.tasks))
+            .attr("fill", "steelblue");
+    </script>
+</body>
+</html>
