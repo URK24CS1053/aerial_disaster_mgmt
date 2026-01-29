@@ -1,0 +1,2098 @@
+[2026-01-29 14:51:49] ERROR    [fusion_engine:fuse_signals:217] Invalid sensor data: motion_level must be NONE/LOW/HIGH, got INVALID
+Details: None
+[2026-01-29 15:26:43] ERROR    [main_system:run_model_evaluation:86] Model evaluation failed: 'cv_mean'
+Details: (<class 'KeyError'>, KeyError('cv_mean'), <traceback object at 0x0000024E19BAA180>)
+Traceback (most recent call last):
+  File "E:\24_hr_hackathon\main.py", line 69, in run_model_evaluation
+    print(f"  Mean Accuracy:    {metrics['cv_mean']:.4f}")
+                                 ~~~~~~~^^^^^^^^^^^
+KeyError: 'cv_mean'
+[2026-01-29 15:27:00] ERROR    [main_system:run_model_evaluation:86] Model evaluation failed: 'cv_mean'
+Details: (<class 'KeyError'>, KeyError('cv_mean'), <traceback object at 0x00000266357AF5C0>)
+Traceback (most recent call last):
+  File "E:\24_hr_hackathon\main.py", line 69, in run_model_evaluation
+    print(f"  Mean Accuracy:    {metrics['cv_mean']:.4f}")
+                                 ~~~~~~~^^^^^^^^^^^
+KeyError: 'cv_mean'
+[2026-01-29 18:41:20] ERROR    [main_orchestrator:orchestrate_legacy_pipeline:107] Legacy pipeline failed: X has 14 features, but RandomForestClassifier is expecting 4 features as input.
+Details: (<class 'ValueError'>, ValueError('X has 14 features, but RandomForestClassifier is expecting 4 features as input.'), <traceback object at 0x0000027AC7239DC0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 94, in orchestrate_legacy_pipeline
+    victim_state = fuse_signals_legacy(sensor_data)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 449, in fuse_signals_legacy
+    return infer_from_perception(perception_output)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 243, in infer_from_perception
+    confidence_pred = _model.predict([feature_vector])[0]
+                      ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Manendra\Desktop\innovatron\.venv\Lib\site-packages\sklearn\ensemble\_forest.py", line 903, in predict
+    proba = self.predict_proba(X)
+  File "C:\Users\Manendra\Desktop\innovatron\.venv\Lib\site-packages\sklearn\ensemble\_forest.py", line 945, in predict_proba
+    X = self._validate_X_predict(X)
+  File "C:\Users\Manendra\Desktop\innovatron\.venv\Lib\site-packages\sklearn\ensemble\_forest.py", line 637, in _validate_X_predict
+    X = validate_data(
+        self,
+    ...<4 lines>...
+        ensure_all_finite=ensure_all_finite,
+    )
+  File "C:\Users\Manendra\Desktop\innovatron\.venv\Lib\site-packages\sklearn\utils\validation.py", line 2923, in validate_data
+    _check_n_features(_estimator, X, reset=reset)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Manendra\Desktop\innovatron\.venv\Lib\site-packages\sklearn\utils\validation.py", line 2787, in _check_n_features
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: X has 14 features, but RandomForestClassifier is expecting 4 features as input.
+[2026-01-29 18:41:20] ERROR    [main_orchestrator:run_legacy_victim_scenario:259] Scenario 'Responsive Healthy Victim' failed
+Details: None
+[2026-01-29 18:41:20] ERROR    [main_orchestrator:orchestrate_legacy_pipeline:107] Legacy pipeline failed: X has 14 features, but RandomForestClassifier is expecting 4 features as input.
+Details: (<class 'ValueError'>, ValueError('X has 14 features, but RandomForestClassifier is expecting 4 features as input.'), <traceback object at 0x0000027AC7115980>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 94, in orchestrate_legacy_pipeline
+    victim_state = fuse_signals_legacy(sensor_data)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 449, in fuse_signals_legacy
+    return infer_from_perception(perception_output)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 243, in infer_from_perception
+    confidence_pred = _model.predict([feature_vector])[0]
+                      ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Manendra\Desktop\innovatron\.venv\Lib\site-packages\sklearn\ensemble\_forest.py", line 903, in predict
+    proba = self.predict_proba(X)
+  File "C:\Users\Manendra\Desktop\innovatron\.venv\Lib\site-packages\sklearn\ensemble\_forest.py", line 945, in predict_proba
+    X = self._validate_X_predict(X)
+  File "C:\Users\Manendra\Desktop\innovatron\.venv\Lib\site-packages\sklearn\ensemble\_forest.py", line 637, in _validate_X_predict
+    X = validate_data(
+        self,
+    ...<4 lines>...
+        ensure_all_finite=ensure_all_finite,
+    )
+  File "C:\Users\Manendra\Desktop\innovatron\.venv\Lib\site-packages\sklearn\utils\validation.py", line 2923, in validate_data
+    _check_n_features(_estimator, X, reset=reset)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Manendra\Desktop\innovatron\.venv\Lib\site-packages\sklearn\utils\validation.py", line 2787, in _check_n_features
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: X has 14 features, but RandomForestClassifier is expecting 4 features as input.
+[2026-01-29 18:41:20] ERROR    [main_orchestrator:run_legacy_victim_scenario:259] Scenario 'Critical - Unresponsive with Weak Vitals' failed
+Details: None
+[2026-01-29 18:41:20] ERROR    [main_orchestrator:orchestrate_legacy_pipeline:107] Legacy pipeline failed: X has 14 features, but RandomForestClassifier is expecting 4 features as input.
+Details: (<class 'ValueError'>, ValueError('X has 14 features, but RandomForestClassifier is expecting 4 features as input.'), <traceback object at 0x0000027AC709BA00>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 94, in orchestrate_legacy_pipeline
+    victim_state = fuse_signals_legacy(sensor_data)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 449, in fuse_signals_legacy
+    return infer_from_perception(perception_output)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 243, in infer_from_perception
+    confidence_pred = _model.predict([feature_vector])[0]
+                      ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Manendra\Desktop\innovatron\.venv\Lib\site-packages\sklearn\ensemble\_forest.py", line 903, in predict
+    proba = self.predict_proba(X)
+  File "C:\Users\Manendra\Desktop\innovatron\.venv\Lib\site-packages\sklearn\ensemble\_forest.py", line 945, in predict_proba
+    X = self._validate_X_predict(X)
+  File "C:\Users\Manendra\Desktop\innovatron\.venv\Lib\site-packages\sklearn\ensemble\_forest.py", line 637, in _validate_X_predict
+    X = validate_data(
+        self,
+    ...<4 lines>...
+        ensure_all_finite=ensure_all_finite,
+    )
+  File "C:\Users\Manendra\Desktop\innovatron\.venv\Lib\site-packages\sklearn\utils\validation.py", line 2923, in validate_data
+    _check_n_features(_estimator, X, reset=reset)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Manendra\Desktop\innovatron\.venv\Lib\site-packages\sklearn\utils\validation.py", line 2787, in _check_n_features
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: X has 14 features, but RandomForestClassifier is expecting 4 features as input.
+[2026-01-29 18:41:20] ERROR    [main_orchestrator:run_legacy_victim_scenario:259] Scenario 'Moderate Injury + High Environmental Risk' failed
+Details: None
+[2026-01-29 18:41:20] ERROR    [main_orchestrator:orchestrate_legacy_pipeline:107] Legacy pipeline failed: X has 14 features, but RandomForestClassifier is expecting 4 features as input.
+Details: (<class 'ValueError'>, ValueError('X has 14 features, but RandomForestClassifier is expecting 4 features as input.'), <traceback object at 0x0000027AC71E6240>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 94, in orchestrate_legacy_pipeline
+    victim_state = fuse_signals_legacy(sensor_data)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 449, in fuse_signals_legacy
+    return infer_from_perception(perception_output)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 243, in infer_from_perception
+    confidence_pred = _model.predict([feature_vector])[0]
+                      ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Manendra\Desktop\innovatron\.venv\Lib\site-packages\sklearn\ensemble\_forest.py", line 903, in predict
+    proba = self.predict_proba(X)
+  File "C:\Users\Manendra\Desktop\innovatron\.venv\Lib\site-packages\sklearn\ensemble\_forest.py", line 945, in predict_proba
+    X = self._validate_X_predict(X)
+  File "C:\Users\Manendra\Desktop\innovatron\.venv\Lib\site-packages\sklearn\ensemble\_forest.py", line 637, in _validate_X_predict
+    X = validate_data(
+        self,
+    ...<4 lines>...
+        ensure_all_finite=ensure_all_finite,
+    )
+  File "C:\Users\Manendra\Desktop\innovatron\.venv\Lib\site-packages\sklearn\utils\validation.py", line 2923, in validate_data
+    _check_n_features(_estimator, X, reset=reset)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Manendra\Desktop\innovatron\.venv\Lib\site-packages\sklearn\utils\validation.py", line 2787, in _check_n_features
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: X has 14 features, but RandomForestClassifier is expecting 4 features as input.
+[2026-01-29 18:41:20] ERROR    [main_orchestrator:run_legacy_victim_scenario:259] Scenario 'Weak Response with Uncertain Vitals' failed
+Details: None
+[2026-01-29 18:41:20] ERROR    [main_orchestrator:orchestrate_legacy_pipeline:107] Legacy pipeline failed: X has 14 features, but RandomForestClassifier is expecting 4 features as input.
+Details: (<class 'ValueError'>, ValueError('X has 14 features, but RandomForestClassifier is expecting 4 features as input.'), <traceback object at 0x0000027AC7239FC0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 94, in orchestrate_legacy_pipeline
+    victim_state = fuse_signals_legacy(sensor_data)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 449, in fuse_signals_legacy
+    return infer_from_perception(perception_output)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 243, in infer_from_perception
+    confidence_pred = _model.predict([feature_vector])[0]
+                      ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Manendra\Desktop\innovatron\.venv\Lib\site-packages\sklearn\ensemble\_forest.py", line 903, in predict
+    proba = self.predict_proba(X)
+  File "C:\Users\Manendra\Desktop\innovatron\.venv\Lib\site-packages\sklearn\ensemble\_forest.py", line 945, in predict_proba
+    X = self._validate_X_predict(X)
+  File "C:\Users\Manendra\Desktop\innovatron\.venv\Lib\site-packages\sklearn\ensemble\_forest.py", line 637, in _validate_X_predict
+    X = validate_data(
+        self,
+    ...<4 lines>...
+        ensure_all_finite=ensure_all_finite,
+    )
+  File "C:\Users\Manendra\Desktop\innovatron\.venv\Lib\site-packages\sklearn\utils\validation.py", line 2923, in validate_data
+    _check_n_features(_estimator, X, reset=reset)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Manendra\Desktop\innovatron\.venv\Lib\site-packages\sklearn\utils\validation.py", line 2787, in _check_n_features
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: X has 14 features, but RandomForestClassifier is expecting 4 features as input.
+[2026-01-29 18:41:20] ERROR    [main_orchestrator:run_legacy_victim_scenario:259] Scenario 'Building Collapse Survivor - Critical' failed
+Details: None
+[2026-01-29 18:48:07] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 1: 'track_id'
+Details: None
+[2026-01-29 18:48:08] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 2: 'track_id'
+Details: None
+[2026-01-29 18:48:08] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 3: 'track_id'
+Details: None
+[2026-01-29 18:48:08] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 4: 'track_id'
+Details: None
+[2026-01-29 18:48:09] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 5: 'track_id'
+Details: None
+[2026-01-29 18:48:09] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 6: 'track_id'
+Details: None
+[2026-01-29 18:48:09] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 7: 'track_id'
+Details: None
+[2026-01-29 18:48:09] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 8: 'track_id'
+Details: None
+[2026-01-29 18:48:10] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 10: 'track_id'
+Details: None
+[2026-01-29 18:48:10] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 12: 'track_id'
+Details: None
+[2026-01-29 18:48:11] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 14: 'track_id'
+Details: None
+[2026-01-29 18:48:11] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 15: 'track_id'
+Details: None
+[2026-01-29 18:48:11] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 16: 'track_id'
+Details: None
+[2026-01-29 18:48:11] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 17: 'track_id'
+Details: None
+[2026-01-29 18:48:12] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 18: 'track_id'
+Details: None
+[2026-01-29 18:48:12] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 20: 'track_id'
+Details: None
+[2026-01-29 18:48:12] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 21: 'track_id'
+Details: None
+[2026-01-29 18:48:12] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 22: 'track_id'
+Details: None
+[2026-01-29 18:48:13] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 23: 'track_id'
+Details: None
+[2026-01-29 18:48:13] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 24: 'track_id'
+Details: None
+[2026-01-29 18:48:13] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 25: 'track_id'
+Details: None
+[2026-01-29 18:48:13] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 26: 'track_id'
+Details: None
+[2026-01-29 18:48:14] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 27: 'track_id'
+Details: None
+[2026-01-29 18:48:14] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 28: 'track_id'
+Details: None
+[2026-01-29 18:48:14] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 29: 'track_id'
+Details: None
+[2026-01-29 18:48:14] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 30: 'track_id'
+Details: None
+[2026-01-29 18:48:15] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 31: 'track_id'
+Details: None
+[2026-01-29 18:48:15] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 32: 'track_id'
+Details: None
+[2026-01-29 18:48:15] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 33: 'track_id'
+Details: None
+[2026-01-29 18:48:15] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 34: 'track_id'
+Details: None
+[2026-01-29 18:48:16] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 35: 'track_id'
+Details: None
+[2026-01-29 18:48:16] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 36: 'track_id'
+Details: None
+[2026-01-29 18:48:16] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 37: 'track_id'
+Details: None
+[2026-01-29 18:48:16] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 38: 'track_id'
+Details: None
+[2026-01-29 18:48:16] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 39: 'track_id'
+Details: None
+[2026-01-29 18:48:17] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 41: 'track_id'
+Details: None
+[2026-01-29 18:48:19] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 50: 'track_id'
+Details: None
+[2026-01-29 18:48:20] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 53: 'track_id'
+Details: None
+[2026-01-29 18:48:23] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 68: 'track_id'
+Details: None
+[2026-01-29 18:48:24] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 71: 'track_id'
+Details: None
+[2026-01-29 18:48:24] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 72: 'track_id'
+Details: None
+[2026-01-29 18:48:28] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 88: 'track_id'
+Details: None
+[2026-01-29 18:48:28] ERROR    [main_orchestrator:run_live_webcam_analysis:513] Error processing frame 89: 'track_id'
+Details: None
+[2026-01-29 18:49:38] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 1: 'track_id'
+Details: None
+[2026-01-29 18:49:38] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 2: 'track_id'
+Details: None
+[2026-01-29 18:49:38] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 3: 'track_id'
+Details: None
+[2026-01-29 18:49:39] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 4: 'track_id'
+Details: None
+[2026-01-29 18:49:39] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 5: 'track_id'
+Details: None
+[2026-01-29 18:49:39] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 6: 'track_id'
+Details: None
+[2026-01-29 18:49:39] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 7: 'track_id'
+Details: None
+[2026-01-29 18:49:39] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 8: 'track_id'
+Details: None
+[2026-01-29 18:49:40] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 9: 'track_id'
+Details: None
+[2026-01-29 18:49:40] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 10: 'track_id'
+Details: None
+[2026-01-29 18:49:40] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 11: 'track_id'
+Details: None
+[2026-01-29 18:49:40] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 12: 'track_id'
+Details: None
+[2026-01-29 18:49:41] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 13: 'track_id'
+Details: None
+[2026-01-29 18:49:41] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 14: 'track_id'
+Details: None
+[2026-01-29 18:49:41] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 15: 'track_id'
+Details: None
+[2026-01-29 18:49:41] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 16: 'track_id'
+Details: None
+[2026-01-29 18:49:42] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 17: 'track_id'
+Details: None
+[2026-01-29 18:49:42] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 18: 'track_id'
+Details: None
+[2026-01-29 18:49:42] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 19: 'track_id'
+Details: None
+[2026-01-29 18:49:42] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 20: 'track_id'
+Details: None
+[2026-01-29 18:49:43] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 21: 'track_id'
+Details: None
+[2026-01-29 18:49:43] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 22: 'track_id'
+Details: None
+[2026-01-29 18:49:43] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 23: 'track_id'
+Details: None
+[2026-01-29 18:49:43] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 24: 'track_id'
+Details: None
+[2026-01-29 18:49:43] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 25: 'track_id'
+Details: None
+[2026-01-29 18:49:44] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 26: 'track_id'
+Details: None
+[2026-01-29 18:49:44] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 27: 'track_id'
+Details: None
+[2026-01-29 18:49:44] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 28: 'track_id'
+Details: None
+[2026-01-29 18:49:44] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 29: 'track_id'
+Details: None
+[2026-01-29 18:49:45] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 30: 'track_id'
+Details: None
+[2026-01-29 18:49:45] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 31: 'track_id'
+Details: None
+[2026-01-29 18:49:45] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 32: 'track_id'
+Details: None
+[2026-01-29 18:49:45] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 33: 'track_id'
+Details: None
+[2026-01-29 18:49:46] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 34: 'track_id'
+Details: None
+[2026-01-29 18:49:46] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 35: 'track_id'
+Details: None
+[2026-01-29 18:49:46] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 36: 'track_id'
+Details: None
+[2026-01-29 18:49:46] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 37: 'track_id'
+Details: None
+[2026-01-29 18:49:46] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 38: 'track_id'
+Details: None
+[2026-01-29 18:49:47] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 39: 'track_id'
+Details: None
+[2026-01-29 18:49:47] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 40: 'track_id'
+Details: None
+[2026-01-29 18:49:47] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 41: 'track_id'
+Details: None
+[2026-01-29 18:49:47] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 42: 'track_id'
+Details: None
+[2026-01-29 18:49:48] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 43: 'track_id'
+Details: None
+[2026-01-29 18:49:48] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 44: 'track_id'
+Details: None
+[2026-01-29 18:49:48] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 45: 'track_id'
+Details: None
+[2026-01-29 18:49:48] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 46: 'track_id'
+Details: None
+[2026-01-29 18:49:49] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 47: 'track_id'
+Details: None
+[2026-01-29 18:49:49] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 48: 'track_id'
+Details: None
+[2026-01-29 18:49:49] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 49: 'track_id'
+Details: None
+[2026-01-29 18:49:49] ERROR    [main_orchestrator:run_live_webcam_analysis:514] Error processing frame 50: 'track_id'
+Details: None
+[2026-01-29 18:50:53] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 1: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E3261C0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:50:53] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 2: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E326240>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:50:53] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 3: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E3650C0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:50:53] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 4: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E32CD00>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:50:54] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 5: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E32C640>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:50:54] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 6: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E364F80>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:50:54] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 7: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E364F80>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:50:54] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 8: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365800>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:50:55] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 9: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365800>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:50:55] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 10: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365800>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:50:55] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 11: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365880>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:50:55] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 12: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365800>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:50:56] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 13: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365480>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:50:56] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 14: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365940>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:50:56] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 15: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365780>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:50:56] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 16: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365880>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:50:57] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 17: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E3658C0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:50:57] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 18: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365380>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:50:57] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 19: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365C40>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:50:58] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 20: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E3652C0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:50:58] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 21: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E3652C0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:50:58] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 22: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365580>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:50:58] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 23: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365380>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:50:58] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 24: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365B80>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:50:59] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 25: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365C00>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:50:59] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 26: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E3654C0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:50:59] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 27: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365B40>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:50:59] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 28: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365C40>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:00] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 29: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365B00>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:00] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 30: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365A80>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:00] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 31: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365CC0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:00] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 32: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365A00>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:01] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 33: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365FC0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:01] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 34: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E3650C0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:01] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 35: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365780>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:01] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 36: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365500>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:02] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 37: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365F40>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:02] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 38: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365B00>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:02] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 39: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E3660C0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:02] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 40: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365D80>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:02] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 41: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365D80>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:03] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 42: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E3654C0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:03] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 43: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365F00>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:03] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 44: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E366300>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:03] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 45: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365500>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:04] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 46: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365B00>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:04] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 47: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E366140>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:04] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 48: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E366440>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:04] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 49: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E366240>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:05] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 50: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365940>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:05] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 51: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365EC0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:05] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 52: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365940>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:05] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 53: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E366180>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:05] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 54: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E366340>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:06] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 55: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365440>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:06] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 56: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365300>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:06] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 57: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E366680>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:06] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 58: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365B40>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:07] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 59: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E3664C0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:07] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 60: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365B40>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:07] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 61: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365F00>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:07] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 62: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E365B40>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:08] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 63: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E366140>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:08] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 64: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E366140>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:08] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 65: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E366AC0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:08] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 66: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E3668C0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:08] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 67: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E366900>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:09] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 68: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E366080>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:09] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 69: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E3660C0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:09] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 70: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E366BC0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:09] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 71: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E3660C0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:10] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 72: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E366D80>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:10] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 73: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E366B80>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:10] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 74: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E3663C0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:10] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 75: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E366DC0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:11] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 76: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E366F40>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:11] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 77: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E366FC0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:11] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 78: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E366F80>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:11] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 79: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E367080>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:11] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 80: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E367100>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:12] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 81: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E366C40>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:12] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 82: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E367000>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:12] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 83: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E3669C0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:12] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 84: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E366900>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:13] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 85: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E367400>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:13] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 86: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E367480>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:13] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 87: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E367500>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:13] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 88: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E367300>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:14] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 89: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E3674C0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:14] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 90: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E3674C0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:14] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 91: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E3678C0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:14] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 92: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E366FC0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:14] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 93: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E367940>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:15] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 94: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E367640>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:15] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 95: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E367780>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:15] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 96: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E3669C0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:15] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 97: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E367A00>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:16] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 98: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E367580>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:16] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 99: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E367B40>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:16] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 100: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E367940>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:16] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 101: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E367B00>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:17] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 102: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E367600>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:51:17] ERROR    [main_orchestrator:run_live_webcam_analysis:519] Error processing frame 103: 'detected'
+Details: (<class 'KeyError'>, KeyError('detected'), <traceback object at 0x000001B58E366140>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 503, in run_live_webcam_analysis
+    victim_state = infer_from_perception(perception)
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\fusion_engine.py", line 225, in infer_from_perception
+    if not perception_output["detected"]:
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'detected'
+[2026-01-29 18:52:21] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 1: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B93A940>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:22] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 2: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B965A40>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:22] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 3: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B966140>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:22] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 4: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B966740>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:23] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 5: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B966A40>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:23] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 6: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B967040>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:23] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 7: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B967440>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:24] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 9: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B967840>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:24] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 10: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B967C00>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:24] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 11: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B967D80>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:24] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 12: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B990380>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:25] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 13: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B990580>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:25] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 15: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B990BC0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:26] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 18: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B990FC0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:26] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 20: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9913C0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:27] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 21: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9917C0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:27] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 22: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B991580>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:27] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 23: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B991F40>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:27] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 24: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B992600>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:28] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 25: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B992A80>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:28] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 26: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B992D00>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:28] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 27: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9935C0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:28] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 28: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9939C0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:29] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 29: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B993FC0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:29] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 30: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9A8240>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:29] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 32: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B993380>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:30] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 33: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B992B80>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:30] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 34: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B993B80>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:30] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 35: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9918C0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:30] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 36: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B967C40>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:31] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 37: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B990900>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:31] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 38: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9A8600>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:31] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 39: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9A9800>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:31] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 40: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9A9640>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:32] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 41: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B992100>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:32] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 42: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B94E9C0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:32] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 43: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B95AC00>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:33] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 44: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B993880>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:33] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 46: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B993D00>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:34] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 48: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B95A6C0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:34] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 49: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B993300>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:34] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 50: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B95A980>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:34] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 51: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B993440>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:34] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 52: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B992340>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:35] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 53: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B991D40>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:35] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 54: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794A0ACC00>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:35] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 55: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B991280>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:36] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 56: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B993800>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:36] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 57: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B95AC00>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:36] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 58: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B991840>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:36] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 59: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9931C0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:37] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 61: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B992C80>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:37] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 62: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B93A6C0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:37] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 63: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B967340>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:38] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 64: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9919C0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:38] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 65: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B95AC00>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:38] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 66: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9AAA40>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:38] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 67: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9924C0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:39] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 68: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9A9D00>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:39] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 69: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B991240>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:39] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 70: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9A8E80>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:39] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 71: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9A9C00>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:40] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 72: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9A9840>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:40] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 73: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B27B540>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:40] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 74: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9A8C40>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:40] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 75: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9AB480>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:41] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 76: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9AB900>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:41] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 77: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9ABD40>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:41] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 78: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B99C200>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:41] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 79: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B99C680>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:42] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 80: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B99CB00>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:42] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 81: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9920C0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:42] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 82: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B99D500>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:42] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 83: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794975E340>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:43] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 84: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9935C0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:43] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 85: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B99D200>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:43] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 86: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9AA000>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:43] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 87: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9A9E80>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:44] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 88: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9AAE00>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:44] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 89: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9A8200>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:44] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 90: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9ABBC0>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:44] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 91: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x0000017949754E80>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:45] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 92: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9AB440>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:45] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 93: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9A8580>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:45] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 94: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794974B940>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:45] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 95: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9AA200>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:46] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 96: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9AA480>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:46] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 97: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9A8D00>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:46] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 98: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9AAF40>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:46] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 99: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B9AAE40>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+[2026-01-29 18:52:47] ERROR    [main_orchestrator:run_live_webcam_analysis:550] Error processing frame 100: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?
+Details: (<class 'TypeError'>, TypeError("assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?"), <traceback object at 0x000001794B966480>)
+Traceback (most recent call last):
+  File "C:\Users\Manendra\Desktop\innovatron\aerial_disaster_mngmt\decision_making\main.py", line 535, in run_live_webcam_analysis
+    urgency_result = assign_urgency(
+        victim_state,
+        environment_risk_level="LOW"
+    )
+TypeError: assign_urgency() got an unexpected keyword argument 'environment_risk_level'. Did you mean 'environment_risk'?

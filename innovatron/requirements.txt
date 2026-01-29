@@ -1,0 +1,20 @@
+# SAR (Search & Rescue) Victim Detection & Urgency Scoring System
+# Python Dependencies - Production
+# 
+# Usage:
+#   Windows PowerShell (with activated venv):
+#   pip install -r requirements.txt
+#
+#   Explicit (without venv activation):
+#   .venv\Scripts\python.exe -m pip install -r requirements.txt
+
+# Core ML/Data Science (numpy 2.x compatible versions)
+numpy>=2.1.0
+scikit-learn>=1.8.0
+scipy>=1.17.0
+
+# Computer Vision
+opencv-python>=4.8.1
+
+# Optional: YOLOv8 (for advanced human detection)
+# ultralytics>=8.0.0  # Uncomment if using YOLOv8 detector
